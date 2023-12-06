@@ -1,0 +1,45 @@
+# Visit https://docs.rilldata.com/reference/project-files to learn more about Rill project files.
+
+title: Pypi Download Stats
+model: model
+timeseries: timestamp_day
+measures:
+  - label: Total Downloads
+    expression: sum(daily_download_count)
+    name: total_records
+    description: Total number of records present
+    format_preset: humanize
+    valid_percent_of_total: true
+dimensions:
+  - name: python_version
+    label: Python_version
+    column: python_version
+    description: ""
+  - name: system_name
+    label: System_name
+    column: system_name
+    description: ""
+  - name: cpu
+    label: Cpu
+    column: cpu
+    description: ""
+  - name: file_version
+    label: File_version
+    column: file_version
+    description: ""
+  - name: country
+    label: Country
+    column: country
+    description: ""
+available_time_zones:
+  - America/Los_Angeles
+  - America/Chicago
+  - America/New_York
+  - Europe/London
+  - Europe/Paris
+  - Asia/Jerusalem
+  - Europe/Moscow
+  - Asia/Kolkata
+  - Asia/Shanghai
+  - Asia/Tokyo
+  - Australia/Sydney

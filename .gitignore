@@ -1,0 +1,6 @@
+
+evidence/.evidence/template
+evidence/.svelte-kit
+evidence/build
+evidence/node_modules
+evidence/.vscode/settings.json
