@@ -12,7 +12,10 @@ Each tool has its own folder with self-contained data and code. Each dashboard i
 ![streamlit](./screenshots/streamlit_dashboard.png)
 
 ## Requirements
-Docker for Desktop & devcontainer extension w/ VSCode OR Python 3.9 & NodeJS 18
+* NodeJS 18 (only for Evidence)
+* Python 3.9 & Poetry (only for Streamlit)
+* GNU Make
+OR Docker for Desktop & [devcontainer extension](https://code.visualstudio.com/docs/devcontainers/containers) w/ VSCode. A devcontainer definition is located in `.devcontainer` folder.
 
 ## Running the demos
 A `Makefile` contains target to install dependencies and run each dashboard locally.
