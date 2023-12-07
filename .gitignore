@@ -4,3 +4,4 @@ evidence/.svelte-kit
 evidence/build
 evidence/node_modules
 evidence/.vscode/settings.json
+*.wal
