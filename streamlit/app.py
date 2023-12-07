@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 con = duckdb.connect(database='duckdb_stats.db', read_only=True)
 
 # Streamlit page configuration
-st.title("DuckDB pypi stats")
+st.title("🦆 DuckDB pypi stats | Streamlit")
 
 # Date Window Filter
 min_date, max_date = con.execute("SELECT MIN(timestamp_day), MAX(timestamp_day) FROM duckdb_stats.main.daily_stats").fetchone()
