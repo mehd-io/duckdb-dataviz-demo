@@ -43,7 +43,7 @@ st.metric("Total Downloads", human_readable_number(total_downloads))
 # Line Graph of Downloads Over Time
 st.subheader("Monthly Downloads Over Time")
 df_monthly = df.groupby('month')['total_downloads'].sum().reset_index()
-st.line_chart(df_monthly.set_index('month'))
+st.line_chart(df_monthly, x='month')
 
 # Line Graph of Python Versions Usage
 st.subheader("Python Version Usage Over Time")

@@ -7,10 +7,10 @@ evidence:
 	cd evidence && npm run dev
 
 streamlit-install:
-	cd streamlit && poetry install
+	cd streamlit-demo && poetry install
 
 streamlit:
-	cd streamlit && poetry run streamlit run app.py
+	cd streamlit-demo && poetry run streamlit run app.py
 
 rill-install:
 	RUN curl -s https://cdn.rilldata.com/install.sh | bash
